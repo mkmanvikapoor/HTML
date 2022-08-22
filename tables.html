@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            border-spacing: 30px;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            border-radius: 10px;
+            border-style: dotted;
+            border-color: #96D4D4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        th:nth-child(even),
+        td:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+
+        tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #D6EEEE;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <table style="width:100%">
+        <tr>
+            <th style="width: 60%;">
+                S.No.
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                City
+            </th>
+        </tr>
+        <tr style="height:200px">
+            <td>1</td>
+            <td>Manvi</td>
+            <td>Ludhiana</td>
+        </tr>
+    </table> -->
+    <table style="width:100%">
+        <caption>Personal Details</caption>
+        <colgroup>
+            <col span="2" style="background-color:#D6EEEE" style="visibility: collapse;">
+            <col span="3" style="background-color: pink">
+        </colgroup>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Manvi</td>
+            <td>Kapoor</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>Shwet</td>
+            <td>Shikha</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>555-1234</td>
+        </tr>
+    </table>
+</body>
+
+</html>
